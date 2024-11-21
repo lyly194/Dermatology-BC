@@ -1,0 +1,250 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x5b26A7A8e14A8BD7366D35B5333cEBdaEbBFD0bf",
+    "txHash": "0xeb9e7461829fc21fea4d2111cfcb3abd77c0022ee2bf091379195e55bb5ffa8b"
+  },
+  "proxies": [
+    {
+      "address": "0xCc0C45c552aEBb98620dCAcdFA1fD58b8229bfdE",
+      "txHash": "0xcc42636f0db2ef76fefe3454739dac869691639046f5d6335ae1d549f4ba6c6b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2dcE8e1c48A33c2A10CD335cdDB782dbdbF319a3",
+      "txHash": "0x9e87527f046a732b21ab5add46d535645651fa55a959befc7819c71cff5b83dd",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "d0dc292de8279001302f20204a816b92a1690d6fc529406a8c2c40b54607c5ff": {
+      "address": "0xB2E2D438EB5d541b8435C2116816b82700a93C1c",
+      "txHash": "0x2cc2dfbdc9a1c2d97cb8de1985c12feba1c7d0969de023c797cc437d8c2cf2f8",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:5"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:6"
+          },
+          {
+            "label": "medicalRecords",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_struct(Record)279_storage)dyn_storage",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:37"
+          },
+          {
+            "label": "histories",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(History)300_storage)dyn_storage",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:38"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(History)300_storage)dyn_storage": {
+            "label": "struct MedicalRecord.History[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Record)279_storage)dyn_storage": {
+            "label": "struct MedicalRecord.Record[]",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(History)300_storage": {
+            "label": "struct MedicalRecord.History",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "recordId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "data",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isDeleted",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "userId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "numberId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "doctorId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "pushedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Record)279_storage": {
+            "label": "struct MedicalRecord.Record",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "data",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isDeleted",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "userId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "numberId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "doctorId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
